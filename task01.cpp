@@ -1,10 +1,17 @@
 #include <cstdio>
+#include <ctype.h>
 
-const char* toUpper(const char* input) {
+char* toUpper(char* input) {
 	// TO DO
+  for(int i=0; i<=13; i++) {
+    input[i] = toupper(input[i]);
+  }
+  return input;
 }
 
 int main() {
-	const char* input = "Hello, World!";
+
+	char input[] = "Hello, World!";
 	puts(toUpper(input)); // should print HELLO, WORLD!
+
 }

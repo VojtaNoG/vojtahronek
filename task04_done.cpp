@@ -55,7 +55,7 @@ struct Fox : Animal { // implements/extends
   }
 };
 
-// const char* whatDoesItSay() {
+// const char* whatDoesItSay() { //melo by byt ve tride
 //   Animal::whatDoesItSay();
 //   if(const char* name == dog) {
 //     strcat(buffer, "dog"); //dog by byl na konci retezce...

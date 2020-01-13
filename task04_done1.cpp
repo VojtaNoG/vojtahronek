@@ -21,7 +21,7 @@ struct Animal {
    virtual const char* whatDoesItSay() {
    //Animal::whatDoesItSay(); //volani metody what DoesItSay() mimo tridu class
      strncat(buffer, name, 3); //http://www.cplusplus.com/reference/cstring/strncat/
-     strncat(buffer, " says ", 6);
+     strncat(buffer, " says ", 6); //zbytecne opakovani
      strncat(buffer, sound, 24);
      return buffer;
   }

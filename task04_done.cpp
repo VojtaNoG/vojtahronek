@@ -28,7 +28,6 @@ struct Animal {
 struct Dog : Animal { // implements/extends
   // TODO
    Dog (const char* name, const char* sound) : Animal(name) { // volani konstruktoru otcovske tridy konstruktorem zdedene
-     this->name = name;
      this->sound = sound;
   }
 
@@ -50,7 +49,6 @@ struct Dog : Animal { // implements/extends
 struct Fox : Animal { // implements/extends
   // TODO
   Fox (const char* name, const char* sound) : Animal(name) { // volani konstruktoru otcovske tridy konstruktorem zdedene
-     this->name = name;
      this->sound = sound;
   }
 };

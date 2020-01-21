@@ -12,4 +12,5 @@ Velmi se omlouvám, ale potřeboval bych na dokončení task03.cpp o trochu víc
 JT: Samozřejmě, pokud budete něco potřebovat, klidně se ptejte, můžeme se také domluvit a podívat se na to individuálně, pokud chcete.
 
 ## task05
+Z mého hledání jsem usoudil, že nelze HW nezávisle získat stav tlačítka na klávesnici (HIGH, LOW), tudíž je nutné kód pro danou platformu silně optimalizovat.
 ![Image of Arduino Button](https://github.com/VojtaNoG/vojtahronek/blob/master/task05/WP_20200121_18_31_36_Pro.jpg)

@@ -12,7 +12,7 @@ struct Button {
 };
 
 struct ButtonPC : Button {
-  virtual void waitForButton() { // Z mého hledání jsem usoudil, že nelze HW nezávisle získat stav tlačítka na klávesnici (HIGH, LOW), tudíž je nutné kód pro danou platformu silně optimalizovat.
+  virtual void waitForButton() {
     Button status;
     cout << "Press the ENTER key to output 'hello'.\n";
     while(true) {

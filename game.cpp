@@ -36,7 +36,7 @@ struct MyGame : Game {
   }
     virtual void printResult() {
         if(p1==p2) {
-            printf("Draw. Both player entered same letter: %c", p1);
+            printf("Draw. Both players entered same letter: %c", p1);
         }
         else if(p1+7 <= p2 || p1-7 >= p2) { // predchozi zadani : p1 <= p2 : pismeno drive v abecede vyhrava
             printf("Player 1 won. Letter: %c", p1);

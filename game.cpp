@@ -35,7 +35,7 @@ struct MyGame : Game {
     else return true;
   }
     virtual void printResult() {
-        if(p1+7 <= p2 || p1-7 >= p2) { // predchozi zadani : p1 <= p2 : pismeno drive v abecede vyhrava
+        if(p1+7 <= p2 || p1-7 >= p2) { // predchozi zadani : p1 <= p2 : pismeno drive v abecede vyhrava, pro toto zadani jsem mel implementovenou jeste remizu
             printf("Player 1 won. Letter: %c", p1);
         }
         else {

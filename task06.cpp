@@ -1,11 +1,11 @@
-// Popište, jakım zpùsobem chápete Dependency Inversion Principle. Uveïte vlastní pøíklad, na kterém to vysvìtlete.
+// PopiÅ¡te, jakÃ½m zpÅ¯sobem chÃ¡pete Dependency Inversion Principle. UveÄte vlastnÃ­ pÅ™Ã­klad, na kterÃ©m to vysvÄ›tlete.
 
 /*
 
-DIP je zpùsob programování, u kterého pøi navrhování a psaní kódu dbáme na to, aby kadá èást programu mohla stát sama o sobì. Abychom jakoukoli èást tohoto programu mohli vzít, upravit èi ji pouít v jiném programu bez jakékoli zmìny kódu. Díky tomu se pak upravování programu stává mnohem jednodušším, protoe staèí upravit pouze tuto èást. Nemusíme tak zasahovat do zbytku kódu našeho programu, jen do dané èásti, která "dokáe stát sama o sobì".
+DIP je zpÅ¯sob programovÃ¡nÃ­, u kterÃ©ho pÅ™i navrhovÃ¡nÃ­ a psanÃ­ kÃ³du dbÃ¡me na to, aby kaÅ¾dÃ¡ ÄÃ¡st programu mohla stÃ¡t sama o sobÄ›. Abychom jakoukoli ÄÃ¡st tohoto programu mohli vzÃ­t, upravit Äi ji pouÅ¾Ã­t v jinÃ©m programu bez jakÃ©koli zmÄ›ny kÃ³du. DÃ­ky tomu se pak upravovÃ¡nÃ­ programu stÃ¡vÃ¡ mnohem jednoduÅ¡Å¡Ã­m, protoÅ¾e staÄÃ­ upravit pouze tuto ÄÃ¡st. NemusÃ­me tak zasahovat do zbytku kÃ³du naÅ¡eho programu, jen do danÃ© ÄÃ¡sti, kterÃ¡ "dokÃ¡Å¾e stÃ¡t sama o sobÄ›".
 
-Pøíkladem by mohl bıt tøeba task05, kde jsme definovali dvì ryze virtuální metody (waitForButton() a hello()). Implementaci pro kadou platformu jsme pak definovali v odvozené tøídì z hlavní rodièovské tøídy, která tyto metody obsahuje. Pro kadou platformu jsme pak definovali vlastní implementaci tìchto virtálních metod. Základ programu stále zùstává stejnı, pouze upravujeme virtuální metody (abstraktní tøídy) pro danou platformu. Mùj task05, uvedenı zde na Githubu, není zcela správnì navren podle DIP. Metody v hlavní tøídì by mìly bıt ryze virtuální...
+PÅ™Ã­kladem by mohl bÃ½t tÅ™eba task05, kde jsme definovali dvÄ› ryze virtuÃ¡lnÃ­ metody (waitForButton() a hello()). Implementaci pro kaÅ¾dou platformu jsme pak definovali v odvozenÃ© tÅ™Ã­dÄ› z hlavnÃ­ rodiÄovskÃ© tÅ™Ã­dy, kterÃ¡ tyto metody obsahuje. Pro kaÅ¾dou platformu jsme pak definovali vlastnÃ­ implementaci tÄ›chto virtÃ¡lnÃ­ch metod. ZÃ¡klad programu stÃ¡le zÅ¯stÃ¡vÃ¡ stejnÃ½, pouze upravujeme virtuÃ¡lnÃ­ metody (abstraktnÃ­ tÅ™Ã­dy) pro danou platformu. MÅ¯j task05, uvedenÃ½ zde na Githubu, nenÃ­ zcela sprÃ¡vnÄ› navrÅ¾en podle DIP. Metody v hlavnÃ­ tÅ™Ã­dÄ› by mÄ›ly bÃ½t ryze virtuÃ¡lnÃ­.
 
-Skvìle vysvìtleno: https://springframework.guru/principles-of-object-oriented-design/dependency-inversion-principle/
+SkvÄ›le vysvÄ›tleno: https://springframework.guru/principles-of-object-oriented-design/dependency-inversion-principle/
 
 */

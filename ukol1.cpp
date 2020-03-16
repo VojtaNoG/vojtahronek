@@ -16,10 +16,10 @@ struct VektorTest {
   	while(true) {
       cout << "Zadej "<< pocet() << ". souradnici vektoru: " << endl;
       cin >> pridejSouradnici;
-    if (pridejSouradnici == "q") {
+      if (pridejSouradnici == "q") {
   			break;
-  		}
-  		else {
+  	  }
+  	  else {
         int data = stoi(pridejSouradnici); //string to int
         souradnice.push_back(data);
   		}

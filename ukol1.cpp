@@ -42,5 +42,5 @@ struct VektorTest {
 
 int main(){
   VektorTest test;
-	return 0;
+  return 0;
 }

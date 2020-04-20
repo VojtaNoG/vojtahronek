@@ -4,8 +4,8 @@
 
 using namespace std;
 /*
-	V C++ jsou operátory funkce jako kadá jiná.
-	Vector2 obsahuje pøetypovávací operátor char*(), kterı se volá tehdy, kdy NÌÈEMU typu char* pøiøadíme hodnotu Vector2. Pokud Vector2 obsahuje pøetypovávací operátor, zavolá se tato funkce. Tento operátor tedy funguje podobnì jako metoda toString() z jinıch jazykù. Napište operátor double(), kterı vrátí velikost Vector2.
+	V C++ jsou operÃ¡tory funkce jako kaÅ¾dÃ¡ jinÃ¡.
+	Vector2 obsahuje pÃ¸etypovÃ¡vacÃ­ operÃ¡tor char*(), kterÃ½ se volÃ¡ tehdy, kdyÅ¾ NÃŒÃˆEMU typu char* pÃ¸iÃ¸adÃ­me hodnotu Vector2. Pokud Vector2 obsahuje pÃ¸etypovÃ¡vacÃ­ operÃ¡tor, zavolÃ¡ se tato funkce. Tento operÃ¡tor tedy funguje podobnÃ¬ jako metoda toString() z jinÃ½ch jazykÃ¹. NapiÅ¡te operÃ¡tor double(), kterÃ½ vrÃ¡tÃ­ velikost Vector2.
 */
 class Vector2 {
 protected:
@@ -23,16 +23,16 @@ public:
 	}
 
 	operator double() {
-    return sqrt(x^2+y^2);
+		return sqrt(x^2+y^2);
 	}
 };
 
 /*
-	Podobnì fungují aritmetické operátory, které lze zapisovat infixovì - operátor uprostøed, napø a*b - to je jenom jinı zápis a.operator*(b). Z toho ale plyne, e lze pouít napø. v*3, ale u ne 3*v. Tento problém vyøešíme ve tøídì Vector2b.
+	PodobnÃ¬ fungujÃ­ aritmetickÃ© operÃ¡tory, kterÃ© lze zapisovat infixovÃ¬ - operÃ¡tor uprostÃ¸ed, napÃ¸ a*b - to je jenom jinÃ½ zÃ¡pis a.operator*(b). Z toho ale plyne, Å¾e lze pouÅ¾Ã­t napÃ¸. v*3, ale uÅ¾ ne 3*v. Tento problÃ©m vyÃ¸eÅ¡Ã­me ve tÃ¸Ã­dÃ¬ Vector2b.
 */
 class Vector2a : public Vector2 {
 public:
-	using Vector2::Vector2; // pouij konstruktor pro Vector2
+	using Vector2::Vector2; // pouÅ¾ij konstruktor pro Vector2
 
 	Vector2a operator*(int n) {
 		return Vector2a(n*x, n*y);
@@ -40,7 +40,7 @@ public:
 };
 
 /*
-	Vector2b øeší nedostatky Vector2a pomocí níe uvedené globální funkce. Implementujte do této tøídy také operátor pro vektorovı souèin (tj. násobení vektoru vektorem)
+	Vector2b Ã¸eÅ¡Ã­ nedostatky Vector2a pomocÃ­ nÃ­Å¾e uvedenÃ© globÃ¡lnÃ­ funkce. Implementujte do tÃ©to tÃ¸Ã­dy takÃ© operÃ¡tor pro vektorovÃ½ souÃ¨in (tj. nÃ¡sobenÃ­ vektoru vektorem)
 */
 class Vector2b : public Vector2 {
 public:
@@ -51,20 +51,20 @@ public:
 	}
 };
 
-// globální funkce: operator*(a,b) je toté, co a*b
+// globÃ¡lnÃ­ funkce: operator*(a,b) je totÃ©Å¾, co a*b
 Vector2b operator*(int n, Vector2b& v) {
 	return v * n;
 }
 
 int main() {
-//	Vector2 v1 = {2,4}; // inicializace pomocí seznamu, od C++11
-//	Vector2 v1 {2,4}; // pøímá inicializace èlenù, styl C
-	Vector2 v1 (2,4); // implicitní volání konstruktoru
-	puts(v1); // funguje díky operátoru char*()
+//	Vector2 v1 = {2,4}; // inicializace pomocÃ­ seznamu, od C++11
+//	Vector2 v1 {2,4}; // pÃ¸Ã­mÃ¡ inicializace Ã¨lenÃ¹, styl C
+	Vector2 v1 (2,4); // implicitnÃ­ volÃ¡nÃ­ konstruktoru
+	puts(v1); // funguje dÃ­ky operÃ¡toru char*()
 
 	Vector2a v2 {2,4};
-	puts(v2 * 3); // funguje díky operátorùm char*() a *()
-	// puts(3 * v2); // chyba, v2 musí bıt na levé stranì
+	puts(v2 * 3); // funguje dÃ­ky operÃ¡torÃ¹m char*() a *()
+	// puts(3 * v2); // chyba, v2 musÃ­ bÃ½t na levÃ© stranÃ¬
 
 	Vector2b v3 {2,4};
 	puts(3 * v3);
